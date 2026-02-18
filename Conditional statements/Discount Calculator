@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float amount, discount, finalBill;
+
+    printf("Enter purchase amount: ");
+    scanf("%f", &amount);
+
+    if (amount >= 5000)
+        discount = (amount * 25) / 100;
+    else if (amount >= 3000)
+        discount = (amount * 15) / 100;
+    else if (amount >= 1000)
+        discount = (amount * 10) / 100;
+    else
+        discount = 0;
+
+    finalBill = amount - discount;
+
+    printf("Discount: %.2f\n", discount);
+    printf("Final Bill: %.2f", finalBill);
+
+    return 0;
+}
