@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float dataUsed, extraCharge;
+
+    printf("Enter data used (GB): ");
+    scanf("%f", &dataUsed);
+
+    if (dataUsed > 2)
+        extraCharge = (dataUsed - 2) * 20;
+    else
+        extraCharge = 0;
+
+    printf("Extra Charge: Rs. %.2f", extraCharge);
+
+    return 0;
+}
