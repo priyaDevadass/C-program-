@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, percentage;
+
+    printf("Enter 3 subject marks: ");
+    scanf("%f %f %f", &m1, &m2, &m3);
+
+    if (m1 < 35 || m2 < 35 || m3 < 35) {
+        printf("Fail");
+    }
+    else {
+        percentage = (m1 + m2 + m3) / 3;
+
+        if (percentage >= 75)
+            printf("Distinction");
+        else if (percentage >= 60)
+            printf("First Class");
+        else if (percentage >= 50)
+            printf("Second Class");
+        else
+            printf("Pass");
+    }
+
+    return 0;
+}
