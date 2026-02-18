@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float balance, amount;
+
+    printf("Enter account balance: ");
+    scanf("%f", &balance);
+
+    printf("Enter withdrawal amount: ");
+    scanf("%f", &amount);
+
+    if (amount % 100 != 0) {
+        printf("Amount should be multiple of 100");
+    }
+    else if (balance - amount < 500) {
+        printf("Minimum balance 500 should be maintained");
+    }
+    else if (amount > balance) {
+        printf("Insufficient balance");
+    }
+    else {
+        printf("Withdrawal Successful");
+        printf("\nRemaining Balance: %.2f", balance - amount);
+    }
+
+    return 0;
+}
