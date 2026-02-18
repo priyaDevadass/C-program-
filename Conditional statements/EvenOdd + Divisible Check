@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        if (num % 4 == 0)
+            printf("Special Even Number");
+        else
+            printf("Normal Even Number");
+    }
+    else {
+        if (num % 3 == 0)
+            printf("Special Odd Number");
+        else
+            printf("Normal Odd Number");
+    }
+
+    return 0;
+}
