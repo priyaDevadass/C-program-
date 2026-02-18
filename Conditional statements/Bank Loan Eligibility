@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    float income;
+
+    printf("Enter age: ");
+    scanf("%d", &age);
+
+    printf("Enter monthly income: ");
+    scanf("%f", &income);
+
+    if (age >= 21 && income >= 25000)
+        printf("Loan Eligible");
+    else
+        printf("Not Eligible");
+
+    return 0;
+}
