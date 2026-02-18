@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float bill, fine, total;
+    int days;
+
+    printf("Enter bill amount: ");
+    scanf("%f", &bill);
+
+    printf("Enter delay days: ");
+    scanf("%d", &days);
+
+    if (days > 20)
+        fine = (bill * 10) / 100;
+    else if (days > 10)
+        fine = (bill * 5) / 100;
+    else
+        fine = 0;
+
+    total = bill + fine;
+
+    printf("Fine: %.2f\n", fine);
+    printf("Total Amount: %.2f", total);
+
+    return 0;
+}
