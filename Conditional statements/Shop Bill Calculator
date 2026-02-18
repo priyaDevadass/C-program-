@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int pen, notebook, pencil;
+    int total;
+
+    printf("Enter quantity of pens: ");
+    scanf("%d", &pen);
+
+    printf("Enter quantity of notebooks: ");
+    scanf("%d", &notebook);
+
+    printf("Enter quantity of pencils: ");
+    scanf("%d", &pencil);
+
+    total = (pen * 20) + (notebook * 70) + (pencil * 9);
+
+    printf("Total Amount: %d", total);
+
+    return 0;
+}
