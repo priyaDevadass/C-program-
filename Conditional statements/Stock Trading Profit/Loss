@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float invest, buy, current, shares, profit;
+
+    printf("Enter investment amount: ");
+    scanf("%f", &invest);
+
+    printf("Enter purchase price per stock: ");
+    scanf("%f", &buy);
+
+    printf("Enter current stock price: ");
+    scanf("%f", &current);
+
+    shares = invest / buy;
+    profit = (current - buy) * shares;
+
+    if (profit > 0)
+        printf("Profit = %.2f\n", profit);
+    else if (profit < 0)
+        printf("Loss = %.2f\n", profit);
+    else
+        printf("No Profit No Loss\n");
+
+    return 0;
+}
