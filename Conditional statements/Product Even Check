@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, product;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    product = a * b;
+
+    if (product % 2 == 0)
+        printf("Result: %d\n", product / 2);
+    else
+        printf("Result: %d\n", product / 3);
+
+    return 0;
+}
